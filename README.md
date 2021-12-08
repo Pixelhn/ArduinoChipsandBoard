@@ -14,7 +14,7 @@
 >
 > **EEPROM：**1K；
 
-**引脚：**
+** 引脚：**
 
 > 20个数字引脚(I/O) ，其中有6个可作为PWM输出引脚，有6个可以作为模拟输入引脚(ADC)，有2个可作为外部中断引脚(INT)；
 >
@@ -22,7 +22,7 @@
 >
 > 20mA / 40mA的I/O引脚的直流电流；
 
-**备注：**与计算机通信需要外置的USB to TTL串口芯片(官方UNO / Nano板载ATmega16U2 / FT232RL 作为USB to TTL串行芯片)，且会占用0 1(RX TX)引脚，需要在设计时避开！
+** 备注：**与计算机通信需要外置的USB to TTL串口芯片(官方UNO / Nano板载ATmega16U2 / FT232RL 作为USB to TTL串行芯片)，且会占用0 1(RX TX)引脚，需要在设计时避开！
 
 ps：与常用的USB to TTL串行芯片:FT232、CP2102、CH340等不同，官方的UNO板是拿ATmega16U2当串口通信芯片，但这块芯片其实本身就是一个MCU，直接就能作为一个小Arduino板的核心，只当一个串口芯片感觉是有点屈才了，于是已经有人在GitHub上给出了方案[HoodLoader2](https://github.com/NicoHood/HoodLoader2)来充分利用上这颗芯片，它的升级版ATmega32U4其实就是Arduino Leonardo和Arduino Micro板的核心芯片，许多的第三方代工厂也是在这里换成了更便宜的CH340来降低成本；而官方的Nano板用的USB串口芯片居然是最贵(当然也是最好)的FT232RL，要知道光这块芯片T宝价格甚至比这块板的核心ATmega328还要贵。
 
